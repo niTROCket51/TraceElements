@@ -1,4 +1,3 @@
-
 # TraceElements
 
 ## Gesture Recognition with OpenCV on Python
