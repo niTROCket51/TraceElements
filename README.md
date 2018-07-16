@@ -18,11 +18,9 @@ The aim of our project is to make a program which would play stone - paper - sci
 ### <a name="algorithms"></a>2. Algorithms
 While carrying out the project, it was a possibility that the machine learning approach decided earlier may not be fast enough. So, we decided to use multiple algorithms. Below is the list of implemented algorithms:
 - **Algorithm 1:**
-[By drawing the convex hull and finding convexity defects](#algorithm1)
-- //TODO **Algorithm 2:**
-[Using ends of fingers as markers](#algorithm2)
-- //TODO **Algorithm 3:**
-[Using Machine Learning](#algorithm3)
+[Using Machine Learning](#algorithm1)
+- **Algorithm 2:**
+[Using convexity defects and area ratio](#algorithm2)
 
 ### <a name="dependencies"></a>3. Dependencies
 Python 3 (preferably Jupyter notebook) is required to run the project with following dependencies:
@@ -42,7 +40,9 @@ Python 3 (preferably Jupyter notebook) is required to run the project with follo
 
 Below is the explanation of how we implemented our algorithms:
 
-1. **Algorithm 1:** <a name="algorithm1"></a>By drawing the convex hull and finding convexity defects
+1. **Algorithm 1:** <a name="algorithm1"></a>Using Machine Learning
+
+2. **Algorithm 2:** <a name="algorithm2"></a>Using convexity defects and area ratio
 	- It detects the skin colour (hand in our case) from camera input and separates out that part of window.
 	- For reducing noise in the separated image it dilates and blurs that image. Thus, contour detection becomes more reliable.
 	- After contour detection, it find the contour of maximum area which will be our hand in this case.
@@ -61,5 +61,6 @@ Defect points | Area Ratio | Result
 
 ### <a name="issues"></a>5. Issues
 Issues faced in the project:
+<br>
 **1. In detection of skin colour:** It is not possible to find exact hsv colour range for skin colour as skin colour varies from person to person. Still if one tries to widen the range of skin colour it starts detecting colours like red and yellow too.<br>
 **Fix:** At the moment,
